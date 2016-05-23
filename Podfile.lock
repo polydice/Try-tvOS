@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (3.4.0)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
+  - Freddy (2.1.0)
+  - HCYoutubeParser (0.0.5)
+  - Hue (1.1)
+  - KeenClientTD (3.2.25)
+  - Keys (1.0.0)
+  - Kingfisher (2.4.0)
+  - Nimble (4.0.1)
+  - Quick (0.9.2)
+  - TreasureData-tvOS-SDK (0.1.14):
+    - KeenClientTD (= 3.2.25)
+
+DEPENDENCIES:
+  - Alamofire
+  - Crashlytics
+  - Fabric
+  - Freddy
+  - HCYoutubeParser
+  - Hue (from `https://github.com/hyperoslo/Hue.git`, commit `89ae5e1`)
+  - Keys (from `Pods/CocoaPodsKeys`)
+  - Kingfisher
+  - Nimble
+  - Quick
+  - TreasureData-tvOS-SDK (= 0.1.14)
+
+EXTERNAL SOURCES:
+  Hue:
+    :commit: 89ae5e1
+    :git: https://github.com/hyperoslo/Hue.git
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
+CHECKOUT OPTIONS:
+  Hue:
+    :commit: 89ae5e1
+    :git: https://github.com/hyperoslo/Hue.git
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  Freddy: bbdca013977db29638b24baf6572ce94452bec29
+  HCYoutubeParser: bc1db8c062e4b835eda381f2be2f9970f6a8d071
+  Hue: c7d6a7206bac669ed69e78cc6c14a4d7bd28277c
+  KeenClientTD: ffe8b9a67e71643f59a9fda7ce51941ed5c49a42
+  Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
+  Kingfisher: 9171a424ee7f8031f518f649bb850d1eab541247
+  Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+  TreasureData-tvOS-SDK: 18c6a68471e6df592ed5c50bf2c07507ee6e3b77
+
+COCOAPODS: 0.39.0

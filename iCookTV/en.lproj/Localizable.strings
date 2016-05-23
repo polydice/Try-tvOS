@@ -1,0 +1,13 @@
+/*
+  Localizable.strings
+  iCookTV
+
+  Created by Ben on 09/04/2016.
+  Copyright © 2016 Polydice, Inc. All rights reserved.
+*/
+
+"Upper tagline" = "icook.tw";
+
+"Lower tagline" = "";
+
+"Contact hi@icook.tw for support." = "Please contact us at hi@icook.tw if this issue keeps happening.";

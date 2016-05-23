@@ -1,0 +1,18 @@
+language: objective-c
+osx_image: xcode7.3
+cache:
+  bundler: true
+  directories:
+    - vendor/bundle
+    - Pods
+before_install:
+  - export LANG=en_US.UTF-8
+install:
+  - bundle install --without development --deployment --jobs=3 --retry=3
+  - bundle exec pod install
+script:
+  - bundle exec scan
+notifications:
+  email: false
+  slack:
+    secure: H14oCUW/JfvUz2qtjccQU+1NK2Uq8GDlnXp0OnFTS0/U3wcrBJxjFI0ZdmseZ1JhHn27jvl+1B/xtRQeCxBExxdOnl7oATf4w1DP0E4pgrCRdTO6NJ+iASB6LbCPMj89wVGZysng5Glxjuh0Q2kbC1wXi1OHozhG9QasXIrcWRcImgZwN3JXeSKDCpbHLL2tfC9eBH8/1wqRCWxacWPlFeKCLBp/BIBvkvkD3NkiDrX4TdCWtPl08LmsPnAEkUYtCGNLONbVDEIUbzBsOyceNjQCqFd3kwWTeqr/iyqYLq0pBOz6/J2EPmbNe9tbyo+TcqUlaUOFfMSwEdgsPwrdVRu/6U6eOprhgG1PgOLlO3moO7k2I7/1s3yZZKvVe31ahMPHVS1FJNKFWuAp0+MsXeTKcM9QhqD0au+TW186dfqbLeKdbA7skIex4YoThw4JNQJee0Rgs5H6xxiuL3c8zgS+vIZ3/eBEoOpjBj4yjaL9c+Y1iL2MIvwTkiExZYZEqHxr3BWDwTMFOUI8UJ+ZXIZHvqjcipunUMCFmxoKHi/LKYVbGGHj9qCwKc2nLDLlGkkLiBDbfvvY70aVp3DWchSA10MlEIrYWlOeP3quRnkDcI1YTBirDIlGdo1y3nthGcPD/mPWXP8Xsm3Y9DAs47enNGHR2q4L8LwUkoDkfxY=
