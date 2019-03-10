@@ -380,7 +380,6 @@
 				B5F7BF461BA9C95F00A75099 /* Resources */,
 				B51A95351CCDFFEB00E5ED97 /* Run Fabric Script */,
 				AA754957F6C9D01CFBA353B7 /* [CP] Embed Pods Frameworks */,
-				EBDC1687F0692BDEB7D3F35D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,7 +399,6 @@
 				B5F7BF561BA9C95F00A75099 /* Frameworks */,
 				B5F7BF571BA9C95F00A75099 /* Resources */,
 				D98BF45783F7971E01068E78 /* [CP] Embed Pods Frameworks */,
-				274F955E84B2D8EB3E68D8D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,7 +416,7 @@
 		B5F7BF401BA9C95F00A75099 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Polydice, Inc.";
 				TargetAttributes = {
 					B5F7BF471BA9C95F00A75099 = {
@@ -493,21 +491,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		274F955E84B2D8EB3E68D8D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCookTV-iCookTVTests/Pods-iCookTV-iCookTVTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9C2EB9E93A1775F7EBF52165 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,7 +515,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iCookTV/Pods-iCookTV-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iCookTV/Pods-iCookTV-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Freddy/Freddy.framework",
 				"${BUILT_PRODUCTS_DIR}/HCYoutubeParser/HCYoutubeParser.framework",
@@ -557,7 +540,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCookTV/Pods-iCookTV-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iCookTV/Pods-iCookTV-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B51A95351CCDFFEB00E5ED97 /* Run Fabric Script */ = {
@@ -586,7 +569,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint --config ${SRCROOT}/.swiftlint.yml";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint --config ${SRCROOT}/.swiftlint.yml\n";
 		};
 		B5BA3B4A1CF6D19800B0A022 /* Run R.swift Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -608,7 +591,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iCookTV-iCookTVTests/Pods-iCookTV-iCookTVTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iCookTV-iCookTVTests/Pods-iCookTV-iCookTVTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Freddy/Freddy.framework",
 				"${BUILT_PRODUCTS_DIR}/HCYoutubeParser/HCYoutubeParser.framework",
@@ -637,22 +620,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCookTV-iCookTVTests/Pods-iCookTV-iCookTVTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EBDC1687F0692BDEB7D3F35D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCookTV/Pods-iCookTV-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iCookTV-iCookTVTests/Pods-iCookTV-iCookTVTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -769,14 +737,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -820,14 +796,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

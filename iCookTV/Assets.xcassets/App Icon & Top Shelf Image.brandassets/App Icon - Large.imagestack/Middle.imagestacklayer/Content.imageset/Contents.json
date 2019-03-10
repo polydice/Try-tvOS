@@ -4,6 +4,10 @@
       "idiom" : "tv",
       "filename" : "icook-tv-app-icon-large-middle.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "scale" : "2x"
     }
   ],
   "info" : {
