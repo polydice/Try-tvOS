@@ -31,29 +31,29 @@ import Freddy
 class LaunchViewController: UIViewController, DataFetching {
 
   private lazy var launchImageView: UIImageView = {
-    let _imageView = UIImageView()
-    _imageView.image = R.image.launchImage()
-    _imageView.contentMode = .scaleAspectFill
-    return _imageView
+    let imageView = UIImageView()
+    imageView.image = R.image.launchImage()
+    imageView.contentMode = .scaleAspectFill
+    return imageView
   }()
 
   private lazy var activityIndicator: UIActivityIndicatorView = {
-    let _indicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-    _indicator.color = UIColor.Palette.GreyishBrown
-    _indicator.hidesWhenStopped = true
-    return _indicator
+    let indicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+    indicator.color = UIColor.Palette.GreyishBrown
+    indicator.hidesWhenStopped = true
+    return indicator
   }()
 
   private lazy var upperTaglineLabel: UILabel = {
-    let _upper = UILabel.taglineLabel()
-    _upper.text = R.string.localizable.launchScreenUpperTagline()
-    return _upper
+    let upper = UILabel.taglineLabel()
+    upper.text = R.string.localizable.launchScreenUpperTagline()
+    return upper
   }()
 
   private lazy var lowerTaglineLabel: UILabel = {
-    let _lower = UILabel.taglineLabel()
-    _lower.text = R.string.localizable.launchScreenLowerTagline()
-    return _lower
+    let lower = UILabel.taglineLabel()
+    lower.text = R.string.localizable.launchScreenLowerTagline()
+    return lower
   }()
 
   private var upperTaglineConstraint: NSLayoutConstraint?
@@ -122,10 +122,10 @@ class LaunchViewController: UIViewController, DataFetching {
         self.lowerTaglineConstraint?.constant = 0
         self.view.layoutIfNeeded()
       }
-    }) { _ in
+    }, completion: { _ in
       self.semaphore.signal()
       self.isAnimating = false
-    }
+    })
   }
 
   // MARK: - Private Methods

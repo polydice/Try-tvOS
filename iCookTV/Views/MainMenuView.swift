@@ -33,17 +33,17 @@ class MainMenuView: UIView {
   private let imageView = UIImageView(image: R.image.icookTvLogo())
 
   private(set) lazy var titleLabel: UILabel = {
-    let _title = UILabel()
-    _title.font = UIFont.tvFontForLogo()
-    _title.textColor = UIColor.tvHeaderTitleColor()
-    _title.text = R.string.localizable.icookTv()
-    return _title
+    let title = UILabel()
+    title.font = UIFont.tvFontForLogo()
+    title.textColor = UIColor.tvHeaderTitleColor()
+    title.text = R.string.localizable.icookTv()
+    return title
   }()
 
   private(set) lazy var button: UIButton = {
-    let _button = MenuButton(type: .system)
-    _button.titleLabel?.font = UIFont.tvFontForHeaderTitle()
-    return _button
+    let button = MenuButton(type: .system)
+    button.titleLabel?.font = UIFont.tvFontForHeaderTitle()
+    return button
   }()
 
   private let focusGuide = UIFocusGuide()

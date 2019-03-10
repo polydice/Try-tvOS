@@ -32,9 +32,9 @@ class CoverBuilder {
   static let NotificationUserInfoCoverKey = "CoverBuilderNotificationUserInfoCoverKey"
 
   private lazy var operationQueue: OperationQueue = {
-    let _queue = OperationQueue()
-    _queue.maxConcurrentOperationCount = 1
-    return _queue
+    let queue = OperationQueue()
+    queue.maxConcurrentOperationCount = 1
+    return queue
   }()
 
   private(set) var cover: UIImage?

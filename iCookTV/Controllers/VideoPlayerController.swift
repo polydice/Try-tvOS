@@ -36,9 +36,9 @@ class VideoPlayerController: AVPlayerViewController, Trackable {
 
   /// An activity indicator displayed before the player item is ready.
   private lazy var loadingIndicator: UIActivityIndicatorView = {
-    let _indicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-    _indicator.hidesWhenStopped = true
-    return _indicator
+    let indicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+    indicator.hidesWhenStopped = true
+    return indicator
   }()
 
   private let playerItemNotifications = [

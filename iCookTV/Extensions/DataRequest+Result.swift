@@ -41,7 +41,7 @@ enum Result<T> {
 
   func mapError(_ transform: (Error) -> Void) -> Result<T> {
     switch self {
-    case .success(_): break
+    case .success: break
     case .failure(let error): transform(error)
     }
     return self

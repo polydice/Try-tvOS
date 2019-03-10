@@ -34,18 +34,18 @@ class SectionHeaderView: UICollectionReusableView {
   private let imageView = UIImageView(image: R.image.icookTvLogo())
 
   private(set) lazy var titleLabel: UILabel = {
-    let _title = UILabel()
-    _title.font = UIFont.tvFontForHeaderTitle()
-    _title.textColor = UIColor.tvHeaderTitleColor()
-    _title.text = R.string.localizable.icookTv()
-    return _title
+    let title = UILabel()
+    title.font = UIFont.tvFontForHeaderTitle()
+    title.textColor = UIColor.tvHeaderTitleColor()
+    title.text = R.string.localizable.icookTv()
+    return title
   }()
 
   private(set) lazy var accessoryLabel: UILabel = {
-    let _accessory = UILabel()
-    _accessory.font = UIFont.tvFontForHeaderTitle()
-    _accessory.textColor = UIColor.tvHeaderTitleColor()
-    return _accessory
+    let accessory = UILabel()
+    accessory.font = UIFont.tvFontForHeaderTitle()
+    accessory.textColor = UIColor.tvHeaderTitleColor()
+    return accessory
   }()
 
   // MARK: - Initialization

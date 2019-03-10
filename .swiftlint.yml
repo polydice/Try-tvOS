@@ -7,7 +7,7 @@ type_name:
   excluded:
     - iCookTVKeys
     - iCookTVTests
-variable_name:
+identifier_name:
   excluded:
     - id
     - URL

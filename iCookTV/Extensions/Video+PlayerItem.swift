@@ -48,23 +48,23 @@ extension Video {
   }
 
   private var titleMetaData: AVMetadataItem {
-    let _title = AVMutableMetadataItem()
-    _title.key = AVMetadataCommonKeyTitle as (NSCopying & NSObjectProtocol)?
-    _title.keySpace = AVMetadataKeySpaceCommon
-    _title.locale = Locale.current
-    _title.value = title as (NSCopying & NSObjectProtocol)?
-    return _title
+    let title = AVMutableMetadataItem()
+    title.key = AVMetadataCommonKeyTitle as (NSCopying & NSObjectProtocol)?
+    title.keySpace = AVMetadataKeySpaceCommon
+    title.locale = Locale.current
+    title.value = title as (NSCopying & NSObjectProtocol)?
+    return title
   }
 
   private var descriptionMetaData: AVMetadataItem {
-    let _description = AVMutableMetadataItem()
-    _description.key = AVMetadataCommonKeyDescription as (NSCopying & NSObjectProtocol)?
-    _description.keySpace = AVMetadataKeySpaceCommon
-    _description.locale = Locale.current
-    _description.value = (description ?? "")
+    let description = AVMutableMetadataItem()
+    description.key = AVMetadataCommonKeyDescription as (NSCopying & NSObjectProtocol)?
+    description.keySpace = AVMetadataKeySpaceCommon
+    description.locale = Locale.current
+    description.value = (self.description ?? "")
       .components(separatedBy: CharacterSet.newlines)
       .joined(separator: "") as (NSCopying & NSObjectProtocol)?
-    return _description
+    return description
   }
 
   // MARK: - Public Methods
@@ -105,12 +105,12 @@ private extension UIImage {
   static let JPEGLeastCompressionQuality = CGFloat(1)
 
   var metadataItem: AVMetadataItem {
-    let _item = AVMutableMetadataItem()
-    _item.key = AVMetadataCommonKeyArtwork as (NSCopying & NSObjectProtocol)?
-    _item.keySpace = AVMetadataKeySpaceCommon
-    _item.locale = Locale.current
-    _item.value = UIImageJPEGRepresentation(self, UIImage.JPEGLeastCompressionQuality) as (NSCopying & NSObjectProtocol)?
-    return _item
+    let item = AVMutableMetadataItem()
+    item.key = AVMetadataCommonKeyArtwork as (NSCopying & NSObjectProtocol)?
+    item.keySpace = AVMetadataKeySpaceCommon
+    item.locale = Locale.current
+    item.value = UIImageJPEGRepresentation(self, UIImage.JPEGLeastCompressionQuality) as (NSCopying & NSObjectProtocol)?
+    return item
   }
 
 }

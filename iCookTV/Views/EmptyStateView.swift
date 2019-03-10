@@ -29,19 +29,19 @@ import UIKit
 class EmptyStateView: UIView {
 
   private(set) lazy var imageView: UIImageView = {
-    let _imageView = UIImageView()
-    _imageView.image = R.image.icookTvCat()
-    _imageView.contentMode = .scaleAspectFill
-    return _imageView
+    let imageView = UIImageView()
+    imageView.image = R.image.icookTvCat()
+    imageView.contentMode = .scaleAspectFill
+    return imageView
   }()
 
   private(set) lazy var textLabel: UILabel = {
-    let _label = UILabel()
-    _label.font = UIFont.tvFontForTagline()
-    _label.textColor = UIColor.tvTaglineColor()
-    _label.text = R.string.localizable.noVideoFound()
-    _label.textAlignment = .center
-    return _label
+    let label = UILabel()
+    label.font = UIFont.tvFontForTagline()
+    label.textColor = UIColor.tvTaglineColor()
+    label.text = R.string.localizable.noVideoFound()
+    label.textAlignment = .center
+    return label
   }()
 
   // MARK: - Initialization

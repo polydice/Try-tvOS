@@ -125,9 +125,9 @@ class HistoryViewController: UIViewController,
   // MARK: - OverlayViewPresentable
 
   private(set) lazy var overlayView: UIView = {
-    let _empty = EmptyStateView()
-    _empty.textLabel.text = R.string.localizable.noHistoryFound()
-    return _empty
+    let empty = EmptyStateView()
+    empty.textLabel.text = R.string.localizable.noHistoryFound()
+    return empty
   }()
 
   func containerViewForOverlayView(_ overlayView: UIView) -> UIView {

@@ -14,7 +14,7 @@ PODS:
   - R.swift (3.2.0):
     - R.swift.Library (~> 3.0.2)
   - R.swift.Library (3.0.2)
-  - SwiftLint (0.24.0)
+  - SwiftLint (0.31.0)
   - TreasureData-iOS-SDK (0.1.15):
     - KeenClientTD (= 3.2.27)
 
@@ -30,7 +30,7 @@ DEPENDENCIES:
   - Nimble
   - Quick
   - R.swift (~> 3.2.0)
-  - SwiftLint (= 0.24.0)
+  - SwiftLint
   - TreasureData-iOS-SDK (= 0.1.15)
 
 SPEC REPOS:
@@ -68,9 +68,9 @@ SPEC CHECKSUMS:
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   R.swift: 207a372a2b5977caef440c696a368009460641d1
   R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
-  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   TreasureData-iOS-SDK: cc878af36b85ae3540a9a5bdb36b7bdc8707b719
 
-PODFILE CHECKSUM: 890bc8cde488e1da70690561ca3f7dead572ce95
+PODFILE CHECKSUM: b1342600e284df842dbe4c3e61095b75edf5cd06
 
 COCOAPODS: 1.6.1

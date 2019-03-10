@@ -30,9 +30,9 @@ import Foundation
 struct Debug {
 
   private static let dateFormatter: DateFormatter = {
-    let _formatter = DateFormatter()
-    _formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-    return _formatter
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+    return formatter
   }()
 
   static func print(_ items: Any..., separator: String = " ", terminator: String = "\n", file: String = #file, function: String = #function, line: Int = #line) {

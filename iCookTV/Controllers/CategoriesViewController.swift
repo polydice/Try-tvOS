@@ -39,19 +39,19 @@ class CategoriesViewController: UIViewController,
   }
 
   private lazy var titleView: MainMenuView = {
-    let _menu = MainMenuView()
-    _menu.button.setTitle(R.string.localizable.history(), for: .normal)
-    _menu.button.addTarget(self, action: .showHistory, for: .primaryActionTriggered)
-    return _menu
+    let menu = MainMenuView()
+    menu.button.setTitle(R.string.localizable.history(), for: .normal)
+    menu.button.addTarget(self, action: .showHistory, for: .primaryActionTriggered)
+    return menu
   }()
 
   private(set) lazy var collectionView: UICollectionView = {
-    let _collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: Metrics.showcaseLayout)
-    _collectionView.register(cell: CategoryCell.self)
-    _collectionView.remembersLastFocusedIndexPath = true
-    _collectionView.dataSource = self.dataSource
-    _collectionView.delegate = self
-    return _collectionView
+    let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: Metrics.showcaseLayout)
+    collectionView.register(cell: CategoryCell.self)
+    collectionView.remembersLastFocusedIndexPath = true
+    collectionView.dataSource = self.dataSource
+    collectionView.delegate = self
+    return collectionView
   }()
 
   // MARK: - BlurBackgroundPresentable

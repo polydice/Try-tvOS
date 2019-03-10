@@ -57,9 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
       TreasureData.sharedInstance().uploadEvents(callback: { [weak self] in
         self?.endBackgroundTask(inApplication: application)
-      }) { [weak self] _ in
+        }, onError: { [weak self] _ in
         self?.endBackgroundTask(inApplication: application)
-      }
+      })
     #endif
   }
 

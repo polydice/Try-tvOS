@@ -68,7 +68,7 @@ extension OverlayViewPresentable where Self: UIViewController {
   }
 
   private func layoutOverlayViewIfNeeded() {
-    if let _ = overlayView.superview {
+    if overlayView.superview != nil {
       return
     }
 

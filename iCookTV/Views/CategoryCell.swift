@@ -36,18 +36,18 @@ class CategoryCell: UICollectionViewCell {
   // MARK: - Private Properties
 
   private(set) lazy var imageView: UIImageView = {
-    let _imageView = UIImageView()
-    _imageView.image = UIImage.placeholderImage(with: self.bounds.size)
-    _imageView.contentMode = .scaleAspectFill
-    return _imageView
+    let imageView = UIImageView()
+    imageView.image = UIImage.placeholderImage(with: self.bounds.size)
+    imageView.contentMode = .scaleAspectFill
+    return imageView
   }()
 
   private(set) lazy var textLabel: UILabel = {
-    let _label = UILabel()
-    _label.font = UIFont.tvFontForCategoryCell()
-    _label.textColor = UIColor.tvTextColor()
-    _label.textAlignment = .center
-    return _label
+    let label = UILabel()
+    label.font = UIFont.tvFontForCategoryCell()
+    label.textColor = UIColor.tvTextColor()
+    label.textAlignment = .center
+    return label
   }()
 
   private let coverBuilder = CoverBuilder()

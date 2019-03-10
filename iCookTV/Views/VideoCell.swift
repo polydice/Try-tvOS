@@ -30,28 +30,28 @@ import Kingfisher
 class VideoCell: UICollectionViewCell {
 
   private(set) lazy var imageView: UIImageView = {
-    let _imageView = UIImageView()
-    _imageView.image = UIImage.placeholderImage(with: self.bounds.size)
-    _imageView.contentMode = .scaleAspectFill
-    return _imageView
+    let imageView = UIImageView()
+    imageView.image = UIImage.placeholderImage(with: self.bounds.size)
+    imageView.contentMode = .scaleAspectFill
+    return imageView
   }()
 
   private(set) lazy var titleLabel: UILabel = {
-    let _title = UILabel()
-    _title.font = UIFont.tvFontForVideoCell()
-    _title.textColor = UIColor.tvTextColor()
-    _title.textAlignment = .center
-    return _title
+    let title = UILabel()
+    title.font = UIFont.tvFontForVideoCell()
+    title.textColor = UIColor.tvTextColor()
+    title.textAlignment = .center
+    return title
   }()
 
   private(set) lazy var timeLabel: UILabel = {
-    let _time = InsetLabel(contentEdgeInsets: UIEdgeInsets(top: 8, left: 20, bottom: 8, right: 20))
-    _time.font = UIFont.tvFontForVideoLength()
-    _time.textColor = UIColor.white
-    _time.backgroundColor = UIColor.Palette.GreyishBrown
-    _time.textAlignment = .center
-    _time.alpha = 0
-    return _time
+    let time = InsetLabel(contentEdgeInsets: UIEdgeInsets(top: 8, left: 20, bottom: 8, right: 20))
+    time.font = UIFont.tvFontForVideoLength()
+    time.textColor = UIColor.white
+    time.backgroundColor = UIColor.Palette.GreyishBrown
+    time.textAlignment = .center
+    time.alpha = 0
+    return time
   }()
 
   private var timeLabelConstraints = (left: NSLayoutConstraint(), bottom: NSLayoutConstraint())
