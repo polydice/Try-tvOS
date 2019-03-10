@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode9.2
+osx_image: xcode10.1
 cache:
   bundler: true
   directories:
@@ -7,11 +7,10 @@ cache:
     - Pods
 before_install:
   - export LANG=en_US.UTF-8
-  - brew tap homebrew/bundle
   - brew bundle
 install:
   - bundle install --without development --deployment --jobs=3 --retry=3
-  - bundle exec pod install
+  - bundle exec pod install --repo-update
 before_script:
   - bundle exec danger
 script:
