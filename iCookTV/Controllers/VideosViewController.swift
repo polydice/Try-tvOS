@@ -161,7 +161,7 @@ class VideosViewController: UIViewController,
     ]
   }
 
-  func updateBackground(with image: UIImage?) {
+  @objc func updateBackground(with image: UIImage?) {
     animateBackgroundTransition(to: image)
   }
 

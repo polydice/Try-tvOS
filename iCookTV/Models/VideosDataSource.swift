@@ -55,8 +55,8 @@ class VideosDataSource: DataSource<VideosCollection> {
   }
 
   func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: IndexPath) -> UICollectionReusableView {
-    if kind == UICollectionElementKindSectionHeader {
-      let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, for: indexPath) as SectionHeaderView
+    if kind == UICollectionView.elementKindSectionHeader {
+      let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, for: indexPath) as SectionHeaderView
       headerView.accessoryLabel.text = title
       return headerView
     }

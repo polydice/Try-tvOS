@@ -780,7 +780,7 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -832,7 +832,7 @@
 				OTHER_SWIFT_FLAGS = "-D TRACKING";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -851,7 +851,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook;
 				PRODUCT_NAME = iCookTV;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -868,7 +867,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook;
 				PRODUCT_NAME = iCookTV;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -883,7 +881,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.bcylin.iCookTVTests;
 				PRODUCT_MODULE_NAME = iCookTVTests;
 				PRODUCT_NAME = iCookTV;
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCookTV.app/iCookTV";
 			};
 			name = Debug;
@@ -900,7 +897,6 @@
 				PRODUCT_MODULE_NAME = iCookTVTests;
 				PRODUCT_NAME = iCookTV;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCookTV.app/iCookTV";
 			};
 			name = Release;

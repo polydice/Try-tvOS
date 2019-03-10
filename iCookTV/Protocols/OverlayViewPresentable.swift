@@ -47,7 +47,7 @@ extension OverlayViewPresentable where Self: UIViewController {
   func setOverlayViewHidden(_ hidden: Bool, animated: Bool) {
     if !hidden {
       layoutOverlayViewIfNeeded()
-      overlayView.superview?.bringSubview(toFront: overlayView)
+      overlayView.superview?.bringSubviewToFront(overlayView)
     }
 
     let transition = {

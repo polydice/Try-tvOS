@@ -32,11 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
   let tabBarController = UITabBarController()
-  private var backgroundTask = UIBackgroundTaskInvalid
+  private var backgroundTask = UIBackgroundTaskIdentifier.invalid
 
   // MARK: - UIApplicationDelegate
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     GroundControl.sync()
     Tracker.setUpAnalytics()
 
@@ -67,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   private func endBackgroundTask(inApplication application: UIApplication) {
     application.endBackgroundTask(backgroundTask)
-    backgroundTask = UIBackgroundTaskInvalid
+    backgroundTask = UIBackgroundTaskIdentifier.invalid
   }
 
 }

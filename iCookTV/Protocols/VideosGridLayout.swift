@@ -43,7 +43,7 @@ extension VideosGridLayout where Self: UIViewController {
   static func defaultCollectionView(dataSource: UICollectionViewDataSource, delegate: UICollectionViewDelegate) -> UICollectionView {
     let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: Metrics.gridFlowLayout)
     collectionView.register(cell: VideoCell.self)
-    collectionView.register(supplementaryView: SectionHeaderView.self, ofKind: UICollectionElementKindSectionHeader)
+    collectionView.register(supplementaryView: SectionHeaderView.self, ofKind: UICollectionView.elementKindSectionHeader)
     collectionView.remembersLastFocusedIndexPath = true
     collectionView.dataSource = dataSource
     collectionView.delegate = delegate
