@@ -577,13 +577,15 @@
 			files = (
 			);
 			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
 			);
 			name = "Run R.swift Script";
 			outputPaths = (
+				$SRCROOT/iCookTV/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh ${SRCROOT}/scripts/rswift.sh";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/iCookTV/R.generated.swift\"\n";
 		};
 		D98BF45783F7971E01068E78 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

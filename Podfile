@@ -14,7 +14,7 @@ target :iCookTV do
   pod "Freddy", "~> 3.0.0"
   pod "HCYoutubeParser"
   pod "Hue", "~> 2.0.0"
-  pod "R.swift", "~> 3.2.0"
+  pod "R.swift"
   pod "Kingfisher", "~> 3.2.0"
   pod "TreasureData-iOS-SDK", "0.1.15"
 

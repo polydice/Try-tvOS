@@ -11,9 +11,9 @@ PODS:
   - Kingfisher (3.2.4)
   - Nimble (7.0.3)
   - Quick (1.2.0)
-  - R.swift (3.2.0):
-    - R.swift.Library (~> 3.0.2)
-  - R.swift.Library (3.0.2)
+  - R.swift (5.0.2):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
   - SwiftLint (0.31.0)
   - TreasureData-iOS-SDK (0.1.15):
     - KeenClientTD (= 3.2.27)
@@ -29,7 +29,7 @@ DEPENDENCIES:
   - Kingfisher (~> 3.2.0)
   - Nimble
   - Quick
-  - R.swift (~> 3.2.0)
+  - R.swift
   - SwiftLint
   - TreasureData-iOS-SDK (= 0.1.15)
 
@@ -66,11 +66,11 @@ SPEC CHECKSUMS:
   Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  R.swift: 207a372a2b5977caef440c696a368009460641d1
-  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
+  R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   TreasureData-iOS-SDK: cc878af36b85ae3540a9a5bdb36b7bdc8707b719
 
-PODFILE CHECKSUM: b1342600e284df842dbe4c3e61095b75edf5cd06
+PODFILE CHECKSUM: 1320d84fd92e42b2b55be1a9b6b79700b2736455
 
 COCOAPODS: 1.6.1
