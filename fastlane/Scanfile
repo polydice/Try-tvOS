@@ -9,3 +9,4 @@ scheme "iCookTV"
 clean true
 skip_build true
 code_coverage true
+xcargs '-UseModernBuildSystem=NO'
