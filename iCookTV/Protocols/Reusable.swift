@@ -48,15 +48,15 @@ extension UICollectionReusableView: Reusable {}
 
 extension UICollectionView {
 
-  func register<T: UICollectionViewCell>(cell type: T.Type) where T: Reusable {
+  func register<T: UICollectionViewCell>(cell type: T.Type) {
     register(type, forCellWithReuseIdentifier: type.reuseIdentifier)
   }
 
-  func register<T: UICollectionReusableView>(supplementaryView type: T.Type, ofKind kind: String) where T: Reusable {
+  func register<T: UICollectionReusableView>(supplementaryView type: T.Type, ofKind kind: String) {
     register(type, forSupplementaryViewOfKind: kind, withReuseIdentifier: type.reuseIdentifier)
   }
 
-  func dequeueReusableCell<T: UICollectionViewCell>(type: T.Type = T.self, for indexPath: IndexPath) -> T where T: Reusable {
+  func dequeueReusableCell<T: UICollectionViewCell>(type: T.Type = T.self, for indexPath: IndexPath) -> T  {
     if let cell = dequeueReusableCell(withReuseIdentifier: type.reuseIdentifier, for: indexPath) as? T {
       return cell
     } else {
@@ -64,7 +64,7 @@ extension UICollectionView {
     }
   }
 
-  func dequeueReusableSupplementaryView<T: UICollectionReusableView>(type: T.Type = T.self, ofKind kind: String, for indexPath: IndexPath) -> T where T: Reusable {
+  func dequeueReusableSupplementaryView<T: UICollectionReusableView>(type: T.Type = T.self, ofKind kind: String, for indexPath: IndexPath) -> T  {
     if let view = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: type.reuseIdentifier, for: indexPath) as? T {
       return view
     } else {
