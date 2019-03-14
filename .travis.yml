@@ -14,9 +14,8 @@ install:
 before_script:
   - bundle exec danger
 script:
-  - bundle exec fastlane scan
-after_failure:
-  - cat ~/Library/Logs/scan/*
+  - bundle exec fastlane scan -B true
+  - bundle exec fastlane scan -T true
 after_success:
   - bash <(curl -s https://codecov.io/bash) -X xcodeplist
 notifications:

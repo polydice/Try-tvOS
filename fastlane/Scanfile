@@ -6,7 +6,7 @@
 
 workspace "iCookTV.xcworkspace"
 scheme "iCookTV"
-clean true
+clean false
 skip_build true
 code_coverage true
 xcargs '-UseModernBuildSystem=NO'
