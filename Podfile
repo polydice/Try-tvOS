@@ -1,4 +1,4 @@
-source "https://github.com/CocoaPods/Specs.git"
+source 'https://github.com/CocoaPods/Specs.git'
 
 platform :tvos, "9.0"
 use_frameworks!
@@ -15,7 +15,7 @@ target :iCookTV do
   pod "HCYoutubeParser"
   pod "Hue", "~> 2.0.0"
   pod "R.swift"
-  pod "Kingfisher", "~> 3.2.0"
+  pod "Kingfisher"
   pod "TreasureData-iOS-SDK", "0.1.15"
 
   target :iCookTVTests do
@@ -31,12 +31,3 @@ plugin "cocoapods-keys", {
   keys: ["BaseAPIURL", "CrashlyticsAPIKey", "TreasureDataAPIKey"]
 }
 
-
-# Specify Swift version in the configs for all the pods installed.
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings["SWIFT_VERSION"] = "3.0"
-    end
-  end
-end

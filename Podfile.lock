@@ -3,13 +3,13 @@ PODS:
   - Crashlytics (3.8.3):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.10)
-  - Freddy (3.0.0)
+  - Freddy (3.0.3)
   - HCYoutubeParser (0.0.5)
   - Hue (2.0.1)
   - KeenClientTD (3.2.27)
   - Keys (1.0.1)
-  - Kingfisher (3.2.4)
-  - Nimble (7.0.3)
+  - Kingfisher (4.10.1)
+  - Nimble (8.0.1)
   - Quick (1.2.0)
   - R.swift (5.0.2):
     - R.swift.Library (~> 5.0.0)
@@ -26,7 +26,7 @@ DEPENDENCIES:
   - HCYoutubeParser
   - Hue (~> 2.0.0)
   - Keys (from `Pods/CocoaPodsKeys`)
-  - Kingfisher (~> 3.2.0)
+  - Kingfisher
   - Nimble
   - Quick
   - R.swift
@@ -58,19 +58,19 @@ SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
   Fabric: c73f371ee543e3f0b80608f2674750e4910d1669
-  Freddy: 367f994c88a90dd3987293b4b1bec94a4530745a
+  Freddy: 7c62db262a0d0e3b3e2b8b40f2c0cc51e122fbc4
   HCYoutubeParser: bc1db8c062e4b835eda381f2be2f9970f6a8d071
   Hue: 354caec055fdc9d38b5ef33ca2e7224721843baf
   KeenClientTD: ddb29a702bd4cfce5d526519ca8959d70c324c6a
   Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
-  Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   TreasureData-iOS-SDK: cc878af36b85ae3540a9a5bdb36b7bdc8707b719
 
-PODFILE CHECKSUM: 1320d84fd92e42b2b55be1a9b6b79700b2736455
+PODFILE CHECKSUM: 3232672af984fb083e1660546ae4a2ae9c3afe1c
 
 COCOAPODS: 1.6.1
