@@ -52,7 +52,7 @@ struct Video: JSONDecodable, JSONEncodable {
   // MARK: - JSONDecodable
 
   init(json value: JSON) throws {
-    let nullable: JSON.SubscriptingOptions = [.NullBecomesNil, .MissingKeyBecomesNil]
+    let nullable: JSON.SubscriptingOptions = [.nullBecomesNil, .missingKeyBecomesNil]
     id = try value.getString(at: "id")
     title = try value.getString(at: "attributes", "title")
     subtitle = try value.getString(at: "attributes", "subtitle", alongPath: nullable)

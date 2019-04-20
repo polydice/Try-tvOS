@@ -35,19 +35,3 @@ protocol SourceType: UICollectionViewDataSource {
 
   subscript(index: Int) -> Collection.DataType { get }
 }
-
-
-////////////////////////////////////////////////////////////////////////////////
-
-
-extension SourceType {
-
-  var numberOfItems: Int {
-    return dataCollection.count
-  }
-
-  subscript(index: Int) -> Collection.DataType {
-    return dataCollection[index]
-  }
-
-}
