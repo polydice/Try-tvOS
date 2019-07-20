@@ -57,7 +57,7 @@ class HistoryViewController: UIViewController,
 
   override var title: String? {
     get {
-      return R.string.localizable.history()
+      return NSLocalizedString("history", comment: "")
     }
     set {}
   }
@@ -67,7 +67,7 @@ class HistoryViewController: UIViewController,
     setUpBlurBackground()
     setUpCollectionView()
     setUpDropdownMenuView()
-    dropdownMenuView.button.setTitle(R.string.localizable.home(), for: .normal)
+    dropdownMenuView.button.setTitle(NSLocalizedString("home", comment: ""), for: .normal)
     dropdownMenuView.button.addTarget(self, action: .backToHome, for: .primaryActionTriggered)
   }
 
@@ -126,7 +126,7 @@ class HistoryViewController: UIViewController,
 
   private(set) lazy var overlayView: UIView = {
     let _empty = EmptyStateView()
-    _empty.textLabel.text = R.string.localizable.noHistoryFound()
+    _empty.textLabel.text = NSLocalizedString("no-history-found", comment: "")
     return _empty
   }()
 

@@ -31,13 +31,13 @@ class SectionHeaderView: UICollectionReusableView {
 
   static let requiredHeight = CGFloat(140)
 
-  private let imageView = UIImageView(image: R.image.icookTvLogo())
+  private let imageView = UIImageView(image: UIImage(named: "icook-tv-logo"))
 
   private(set) lazy var titleLabel: UILabel = {
     let _title = UILabel()
     _title.font = UIFont.tvFontForHeaderTitle()
     _title.textColor = UIColor.tvHeaderTitleColor()
-    _title.text = R.string.localizable.icookTv()
+    _title.text = NSLocalizedString("icook-tv", comment: "")
     return _title
   }()
 

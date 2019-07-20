@@ -30,7 +30,7 @@ class EmptyStateView: UIView {
 
   private(set) lazy var imageView: UIImageView = {
     let _imageView = UIImageView()
-    _imageView.image = R.image.icookTvCat()
+    _imageView.image = UIImage(named: "icook-tv-cat")
     _imageView.contentMode = .scaleAspectFill
     return _imageView
   }()
@@ -39,7 +39,7 @@ class EmptyStateView: UIView {
     let _label = UILabel()
     _label.font = UIFont.tvFontForTagline()
     _label.textColor = UIColor.tvTaglineColor()
-    _label.text = R.string.localizable.noVideoFound()
+    _label.text = NSLocalizedString("no-video-found", comment: "")
     _label.textAlignment = .center
     return _label
   }()

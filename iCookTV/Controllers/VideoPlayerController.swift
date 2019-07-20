@@ -155,9 +155,9 @@ class VideoPlayerController: AVPlayerViewController, Trackable {
     loadingIndicator.stopAnimating()
 
     guard let playerItem = playerItem else {
-      let message = R.string.localizable.videoError() + "\n" + R.string.localizable.contactInfo()
-      let alert = UIAlertController(title: R.string.localizable.errorTitle(), message: message, preferredStyle: .alert)
-      alert.addAction(UIAlertAction(title: R.string.localizable.ok(), style: .default) { [weak self] _ in
+      let message = NSLocalizedString("video-error", comment: "") + "\n" + NSLocalizedString("contact-info", comment: "")
+      let alert = UIAlertController(title: NSLocalizedString("error-title", comment: ""), message: message, preferredStyle: .alert)
+      alert.addAction(UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .default) { [weak self] _ in
         self?.dismiss()
       })
       present(alert, animated: true, completion: nil)

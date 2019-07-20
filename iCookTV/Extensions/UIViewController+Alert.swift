@@ -32,11 +32,11 @@ extension UIViewController {
     Tracker.track(error)
 
     let alert = UIAlertController(
-      title: R.string.localizable.errorTitle(),
-      message: R.string.localizable.contactInfo(),
+      title: NSLocalizedString("error-title", comment: ""),
+      message: NSLocalizedString("contact-info", comment: ""),
       preferredStyle: .alert
     )
-    alert.addAction(UIAlertAction(title: R.string.localizable.retry(), style: .default) { _ in
+    alert.addAction(UIAlertAction(title: NSLocalizedString("retry", comment: ""), style: .default) { _ in
       retry?()
     })
     present(alert, animated: true, completion: nil)

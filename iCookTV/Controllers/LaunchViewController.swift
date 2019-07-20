@@ -32,7 +32,7 @@ class LaunchViewController: UIViewController, DataFetching {
 
   private lazy var launchImageView: UIImageView = {
     let _imageView = UIImageView()
-    _imageView.image = R.image.launchImage()
+    _imageView.image = UIImage(named: "launchImage")
     _imageView.contentMode = .scaleAspectFill
     return _imageView
   }()
@@ -46,13 +46,13 @@ class LaunchViewController: UIViewController, DataFetching {
 
   private lazy var upperTaglineLabel: UILabel = {
     let _upper = UILabel.taglineLabel()
-    _upper.text = R.string.localizable.launchScreenUpperTagline()
+    _upper.text = NSLocalizedString("launch-screen-upper-tagline", comment: "")
     return _upper
   }()
 
   private lazy var lowerTaglineLabel: UILabel = {
     let _lower = UILabel.taglineLabel()
-    _lower.text = R.string.localizable.launchScreenLowerTagline()
+    _lower.text = NSLocalizedString("launch-screen-lower-tagline", comment: "")
     return _lower
   }()
 

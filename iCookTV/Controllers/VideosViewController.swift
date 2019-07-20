@@ -89,7 +89,7 @@ class VideosViewController: UIViewController,
     setUpBlurBackground()
     setUpCollectionView()
     setUpDropdownMenuView()
-    dropdownMenuView.button.setTitle(R.string.localizable.history(), for: .normal)
+    dropdownMenuView.button.setTitle(NSLocalizedString("history", comment: ""), for: .normal)
     dropdownMenuView.button.addTarget(self, action: .showHistory, for: .primaryActionTriggered)
   }
 

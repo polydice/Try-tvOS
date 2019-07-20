@@ -52,7 +52,6 @@
 		B5A614F71CCA05B4004A3CD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5A614F91CCA05B4004A3CD5 /* InfoPlist.strings */; };
 		B5A8F7091CA259120069F836 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8F7081CA259120069F836 /* CategoryCell.swift */; };
 		B5AEEE321C82D4BC001CF112 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEEE311C82D4BC001CF112 /* Metrics.swift */; };
-		B5BA3B4C1CF6D25500B0A022 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3B4B1CF6D25500B0A022 /* R.generated.swift */; };
 		B5BA61891C77431400548B38 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA61881C77431400548B38 /* VideoCell.swift */; };
 		B5BA618B1C7748B900548B38 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA618A1C7748B900548B38 /* Video.swift */; };
 		B5BA618D1C774BC400548B38 /* VideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA618C1C774BC400548B38 /* VideoPlayerController.swift */; };
@@ -133,7 +132,6 @@
 		B5A614FB1CCA05B7004A3CD5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		B5A8F7081CA259120069F836 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		B5AEEE311C82D4BC001CF112 /* Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
-		B5BA3B4B1CF6D25500B0A022 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B5BA61881C77431400548B38 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		B5BA618A1C7748B900548B38 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		B5BA618C1C774BC400548B38 /* VideoPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerController.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 				B5F7BF541BA9C95F00A75099 /* Info.plist */,
 				B5A614F91CCA05B4004A3CD5 /* InfoPlist.strings */,
 				B500D9A81CB94B5D00622198 /* Localizable.strings */,
-				B5BA3B4B1CF6D25500B0A022 /* R.generated.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -374,7 +371,6 @@
 			buildPhases = (
 				24D096314DA4D14E4EDFA5EB /* [CP] Check Pods Manifest.lock */,
 				B52DFA9C1CF8006E005B9D67 /* Run Swiftlint */,
-				B5BA3B4A1CF6D19800B0A022 /* Run R.swift Script */,
 				B5F7BF441BA9C95F00A75099 /* Sources */,
 				B5F7BF451BA9C95F00A75099 /* Frameworks */,
 				B5F7BF461BA9C95F00A75099 /* Resources */,
@@ -540,7 +536,6 @@
 				"${BUILT_PRODUCTS_DIR}/KeenClientTD/KeenClientTD.framework",
 				"${BUILT_PRODUCTS_DIR}/Keys/Keys.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/TreasureData-iOS-SDK/TreasureData_iOS_SDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -552,7 +547,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeenClientTD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keys.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TreasureData_iOS_SDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,20 +582,6 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint --config ${SRCROOT}/.swiftlint.yml";
 		};
-		B5BA3B4A1CF6D19800B0A022 /* Run R.swift Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run R.swift Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh ${SRCROOT}/scripts/rswift.sh";
-		};
 		D98BF45783F7971E01068E78 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,7 +596,6 @@
 				"${BUILT_PRODUCTS_DIR}/KeenClientTD/KeenClientTD.framework",
 				"${BUILT_PRODUCTS_DIR}/Keys/Keys.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/TreasureData-iOS-SDK/TreasureData_iOS_SDK.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -630,7 +609,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeenClientTD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keys.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TreasureData_iOS_SDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -690,7 +668,6 @@
 				B5DA8EDE1CB3BD1B0068E0E3 /* MenuView.swift in Sources */,
 				B5AEEE321C82D4BC001CF112 /* Metrics.swift in Sources */,
 				B543C3EA1CD1E85E008C512B /* OverlayViewPresentable.swift in Sources */,
-				B5BA3B4C1CF6D25500B0A022 /* R.generated.swift in Sources */,
 				B55BF7E71DC5B7F400EE20BD /* Reusable.swift in Sources */,
 				B5C591151CA04BA50096B985 /* SectionHeaderView.swift in Sources */,
 				B516E78B1D54D73B00A3FCB9 /* SourceType.swift in Sources */,

@@ -29,13 +29,13 @@ import UIKit
 /// A customized view with a layout of `H:|[focusGuide][button]-|`.
 class MenuView: UIView {
 
-  private let imageView = UIImageView(image: R.image.icookTvLogo())
+  private let imageView = UIImageView(image: UIImage(named: "icook-tv-logo"))
 
   private lazy var titleLabel: UILabel = {
     let _label = UILabel()
     _label.font = UIFont.tvFontForHeaderTitle()
     _label.textColor = UIColor.tvHeaderTitleColor()
-    _label.text = R.string.localizable.icookTv()
+    _label.text = NSLocalizedString("icook-tv", comment: "")
     return _label
   }()
 

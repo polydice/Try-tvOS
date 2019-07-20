@@ -40,7 +40,7 @@ class CategoriesViewController: UIViewController,
 
   private lazy var titleView: MainMenuView = {
     let _menu = MainMenuView()
-    _menu.button.setTitle(R.string.localizable.history(), for: .normal)
+    _menu.button.setTitle(NSLocalizedString("history", comment: ""), for: .normal)
     _menu.button.addTarget(self, action: .showHistory, for: .primaryActionTriggered)
     return _menu
   }()
