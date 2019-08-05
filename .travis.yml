@@ -7,6 +7,7 @@ cache:
     - Pods
 before_install:
   - export LANG=en_US.UTF-8
+  - gem install bundler -v 2.0.2
 install:
   - bundle install --without development --deployment --jobs=3 --retry=3
   - bundle exec pod install
