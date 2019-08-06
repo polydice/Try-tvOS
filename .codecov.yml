@@ -1,5 +1,12 @@
 coverage:
   status:
-    project: yes
-    patch: no
-    changes: no
+    project:
+      default:
+        threshold: 5%
+    patch: off
+    changes: off
+comment:
+  layout: "files"
+ignore:
+  - "*Tests/**/*"
+  - "Pods/**/*"
