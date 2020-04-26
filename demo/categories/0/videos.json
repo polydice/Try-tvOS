@@ -6,10 +6,10 @@
         "title": "Lorem Ipsum",
         "subtitle": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at consequat justo.",
-        "length": 42.0,
+        "length": 55.0,
         "embed-url": "https://youtu.be/sWbJBkzja60",
-        "cover-url": "https://d5aadpl255coo.cloudfront.net/uploads/video/image/216/medium_ceb61fda506618b9.jpg",
-        "video-url": null
+        "cover-url": "https://uploads-tv-icook.icook.network/uploads/video/image/216/medium_ceb61fda506618b9.jpg",
+        "video-url": "https://uploads-tv-icook.icook.network/uploads/video/file/216/233545c0ff75d3df.m3u8"
       }
     }
   ]
