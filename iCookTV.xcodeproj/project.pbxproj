@@ -422,7 +422,9 @@
 				TargetAttributes = {
 					B5F7BF471BA9C95F00A75099 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = U27B56TU48;
 						LastSwiftMigration = 1030;
+						ProvisioningStyle = Manual;
 					};
 					B5F7BF581BA9C95F00A75099 = {
 						CreatedOnToolsVersion = 7.1;
@@ -436,7 +438,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				"zh-Hant",
@@ -882,11 +883,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 103;
+				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = iCookTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook;
 				PRODUCT_NAME = iCookTV;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook tvos";
 			};
 			name = Debug;
 		};
@@ -897,11 +902,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 103;
+				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = iCookTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook;
 				PRODUCT_NAME = iCookTV;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook tvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
