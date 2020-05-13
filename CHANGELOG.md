@@ -2,6 +2,8 @@
 
 ## Develop Branch
 
+## v1.1.0
+
 * Syntax check with SwiftLint [#3](https://github.com/polydice/iCook-tvOS/pull/3)
 * Code coverage
 * A little help from [Danger](http://danger.systems/) [#4](https://github.com/polydice/iCook-tvOS/pull/4)
