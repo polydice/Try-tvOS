@@ -25,32 +25,50 @@
 //
 
 @testable import iCookTV
-import Freddy
-import Nimble
-import Quick
+import XCTest
 
-class CategorySpec: QuickSpec {
+final class CategorySpec: XCTestCase {
 
-  override func spec() {
+  func testDecoding() throws {
+    // Given Category.json
+    let data: Data = Resources.testData(named: "Category.json")!
 
-    let data: NSData = Resources.testData(named: "Category.json")!
+    // When decoding
+    let decoder = JSONDecoder()
+    let category = try decoder.decode(Category.self, from: data)
 
-    describe("init(json:)") {
-      it("should parse JSON as Category") {
-        let json = try! JSON(data: data)
-        let category = try! Category(json: json)
+    // It should parse JSON as Category
+    XCTAssertEqual(category.id, "9527")
+    XCTAssertEqual(category.name, "愛料理廚房")
+    XCTAssertEqual(category.coverURLs, [
+      "https://imag.es/1.jpg",
+      "https://imag.es/2.jpg",
+      "https://imag.es/3.jpg",
+      "https://imag.es/4.jpg"
+    ])
+  }
 
-        expect(category.id).to(equal("9527"))
-        expect(category.name).to(equal("愛料理廚房"))
-        expect(category.coverURLs).to(equal([
-          "https://imag.es/1.jpg",
-          "https://imag.es/2.jpg",
-          "https://imag.es/3.jpg",
-          "https://imag.es/4.jpg"
-        ]))
-      }
-    }
+  func testEncoding() throws {
+    // Given a Category object
+    let category = Category(
+      id: "9527",
+      name: "愛料理廚房",
+      coverURLs: [
+        "https://imag.es/1.jpg",
+        "https://imag.es/2.jpg"
+      ]
+    )
 
+    // When encoding
+    let encoder = JSONEncoder()
+    let json = try encoder.encode(category)
+    let jsonString = String(data: json, encoding: .utf8)
+
+    // It should encode Category to JSON
+    XCTAssert(jsonString!.contains("\"id\":\"9527\""))
+    XCTAssert(jsonString!.contains("\"attributes\":{"))
+    XCTAssert(jsonString!.contains("\"name\":\"愛料理廚房\""))
+    XCTAssert(jsonString!.contains("\"cover-urls\":[\"https:\\/\\/imag.es\\/1.jpg\",\"https:\\/\\/imag.es\\/2.jpg\"]"))
   }
 
 }

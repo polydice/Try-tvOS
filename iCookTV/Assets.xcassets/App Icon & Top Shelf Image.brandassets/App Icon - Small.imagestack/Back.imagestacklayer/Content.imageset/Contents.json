@@ -2,8 +2,13 @@
   "images" : [
     {
       "idiom" : "tv",
-      "filename" : "icook-tv-app-icon-small-back.png",
+      "filename" : "icook-tvOS-small-icon-3.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "filename" : "icook-tvOS-small-icon-3@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

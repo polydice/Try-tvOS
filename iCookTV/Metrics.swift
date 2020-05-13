@@ -32,7 +32,7 @@ struct Metrics {
 
   static var horizontalFlowLayout: UICollectionViewFlowLayout {
     let _horizontal = UICollectionViewFlowLayout()
-    _horizontal.scrollDirection = .Horizontal
+    _horizontal.scrollDirection = .horizontal
     _horizontal.sectionInset = UIEdgeInsets(top: 0, left: EdgePadding.left, bottom: 0, right: EdgePadding.right)
     _horizontal.minimumInteritemSpacing = 0
     _horizontal.minimumLineSpacing = 50
@@ -42,18 +42,18 @@ struct Metrics {
 
   static var verticalFlowLayout: UICollectionViewFlowLayout {
     let _vertical = UICollectionViewFlowLayout()
-    _vertical.scrollDirection = .Vertical
-    _vertical.sectionInset = UIEdgeInsetsZero
+    _vertical.scrollDirection = .vertical
+    _vertical.sectionInset = UIEdgeInsets.zero
     _vertical.minimumInteritemSpacing = 0
     _vertical.minimumLineSpacing = 50
-    _vertical.headerReferenceSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: 100)
-    _vertical.itemSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: 308)
+    _vertical.headerReferenceSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
+    _vertical.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 308)
     return _vertical
   }
 
   static var gridFlowLayout: UICollectionViewFlowLayout {
     let _grid = UICollectionViewFlowLayout()
-    _grid.scrollDirection = .Vertical
+    _grid.scrollDirection = .vertical
     _grid.sectionInset = UIEdgeInsets(top: 90, left: 80, bottom: 90, right: 80)
     _grid.minimumInteritemSpacing = 40
     _grid.minimumLineSpacing = 130
@@ -61,7 +61,7 @@ struct Metrics {
     let numberOfItemsPerRow = 5
     let paddings = EdgePadding.left + EdgePadding.right
     let spaces = _grid.minimumInteritemSpacing * CGFloat(numberOfItemsPerRow - 1)
-    let contentWidth = UIScreen.mainScreen().bounds.width - paddings - spaces
+    let contentWidth = UIScreen.main.bounds.width - paddings - spaces
     let itemWidth = contentWidth / CGFloat(numberOfItemsPerRow)
     _grid.itemSize = CGSize(width: itemWidth, height: 200)
 
@@ -70,7 +70,7 @@ struct Metrics {
 
   static var showcaseLayout: UICollectionViewFlowLayout {
     let _showcase = UICollectionViewFlowLayout()
-    _showcase.scrollDirection = .Horizontal
+    _showcase.scrollDirection = .horizontal
     _showcase.sectionInset = UIEdgeInsets(top: 100, left: 100, bottom: 220, right: 100)
     _showcase.minimumLineSpacing = 80
     _showcase.itemSize = CGSize(width: 640, height: 480)

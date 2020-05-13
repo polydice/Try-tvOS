@@ -29,17 +29,17 @@ import Foundation
 
 struct Debug {
 
-  private static let dateFormatter: NSDateFormatter = {
-    let _formatter = NSDateFormatter()
+  private static let dateFormatter: DateFormatter = {
+    let _formatter = DateFormatter()
     _formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
     return _formatter
   }()
 
-  static func print(items: Any..., separator: String = " ", terminator: String = "\n", file: String = #file, function: String = #function, line: Int = #line) {
+  static func print(_ items: Any..., separator: String = " ", terminator: String = "\n", file: String = #file, function: String = #function, line: Int = #line) {
     #if DEBUG
-      let prefix = dateFormatter.stringFromDate(NSDate()) + " \(file.typeName).\(function):[\(line)]"
-      let content = items.map { "\($0)" } .joinWithSeparator(separator)
-      Swift.print("\(prefix) \(content)\n", terminator: terminator)
+      let prefix = dateFormatter.string(from: Date()) + " \(file.typeName).\(function):[\(line)]"
+      let content = items.map { "\($0)" } .joined(separator: separator)
+      Swift.print("\(prefix) \(content)", terminator: terminator)
     #endif
   }
 
@@ -60,7 +60,7 @@ extension String {
   }
 
   private var stringByDeletingPathExtension: String {
-    return (self as NSString).stringByDeletingPathExtension
+    return (self as NSString).deletingPathExtension
   }
 
 }

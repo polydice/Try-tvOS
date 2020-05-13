@@ -1,30 +1,29 @@
-source "https://github.com/CocoaPods/Specs.git"
-source "https://github.com/bcylin/Specs.git"
+source 'https://cdn.cocoapods.org/'
 
-platform :tvos, "9.0"
+platform :tvos, "10.0"
 use_frameworks!
 inhibit_all_warnings!
 
 workspace "iCookTV"
-xcodeproj "iCookTV"
+project "iCookTV"
 
 target :iCookTV do
-  pod "Alamofire"
-  pod "Crashlytics"
-  pod "Fabric"
-  pod "Freddy"
+  pod "Alamofire", "4.8.2"
+  pod "Firebase/Crashlytics"
   pod "HCYoutubeParser"
-  pod "Hue", git: "https://github.com/hyperoslo/Hue.git", commit: "89ae5e1"
-  pod "Kingfisher"
-  pod "TreasureData-tvOS-SDK", "0.1.14"
+  pod "Hue", "5.0.0"
+  pod "Kingfisher", "5.7.0"
+  pod "FBSDKTVOSKit"
+  pod "ComScore"
+
+  target :iCookTVTests do
+    pod "SwiftLint", '0.34.0'
+  end
 end
 
-target :iCookTVTests do
-  pod "Nimble"
-  pod "Quick"
-end
 
 plugin "cocoapods-keys", {
   project: "iCookTV",
-  keys: ["BaseAPIURL", "CrashlyticsAPIKey", "TreasureDataAPIKey"]
+  keys: ["BaseAPIURL", "FacebookAppID", "ComScorePublisherID"]
 }
+

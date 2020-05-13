@@ -25,43 +25,56 @@
 //
 
 @testable import iCookTV
-import Freddy
-import Nimble
-import Quick
+import XCTest
 
-class VideoSpec: QuickSpec {
+final class VideoSpec: XCTestCase {
 
-  override func spec() {
+  func testDecoding() throws {
+    // Given Video.json
+    let data: Data = Resources.testData(named: "Video.json")!
 
-    let data: NSData = Resources.testData(named: "Video.json")!
-    let json = try! JSON(data: data)
-    let video = try! Video(json: json)
+    // When decoding
+    let decoder = JSONDecoder()
+    let video = try! decoder.decode(Video.self, from: data)
 
-    describe("init(json:)") {
-      it("should parse JSON as Video") {
-        expect(video.id).to(equal("42"))
-        expect(video.title).to(equal("Lorem"))
-        expect(video.subtitle).to(equal("ipsum"))
-        expect(video.description).to(equal("dolor sit amet"))
-        expect(video.length).to(equal(123))
-        expect(video.youtube).to(equal("https://www.youtube.com/watch?v=3345678"))
-        expect(video.source).to(equal("https://vide.os/source.m3u8"))
-        expect(video.cover).to(equal("https://imag.es/cover.jpg"))
-      }
-    }
+    // It should parse JSON as Video
+    XCTAssertEqual(video.id, "42")
+    XCTAssertEqual(video.title, "Lorem")
+    XCTAssertEqual(video.subtitle, "ipsum")
+    XCTAssertEqual(video.description, "dolor sit amet")
+    XCTAssertEqual(video.length, 123)
+    XCTAssertEqual(video.youtube, "https://www.youtube.com/watch?v=3345678")
+    XCTAssertEqual(video.source, "https://vide.os/source.m3u8")
+    XCTAssertEqual(video.cover, "https://imag.es/cover.jpg")
+  }
 
-    describe("toJSON()") {
-      let converted = video.toJSON()
+  func testEncoding() throws {
+    // Given a Video object
+    let video = Video(
+      id: "42",
+      title: "Lorem",
+      subtitle: "ipsum",
+      description: "dolor sit amet",
+      length: 123,
+      youtube: "https://www.youtube.com/watch?v=3345678",
+      source: "https://vide.os/source.m3u8",
+      cover: "https://imag.es/cover.jpg"
+    )
 
-      it("should convert Video to JSON") {
-        expect(converted["id"]).to(equal(json["id"]))
+    // When encoding
+    let encoder = JSONEncoder()
+    let json = try encoder.encode(video)
+    let jsonString = String(data: json, encoding: .utf8)
 
-        for key in ["title", "embed-url", "video-url", "cover-url", "length", "subtitle", "description"] {
-          expect(converted["attributes"]?[key]).to(equal(json["attributes"]?[key]))
-        }
-      }
-    }
-
+    // It should encode Video to JSON
+    XCTAssert(jsonString!.contains("\"id\":\"42\""))
+    XCTAssert(jsonString!.contains("\"title\":\"Lorem\""))
+    XCTAssert(jsonString!.contains("\"subtitle\":\"ipsum\""))
+    XCTAssert(jsonString!.contains("\"description\":\"dolor sit amet\""))
+    XCTAssert(jsonString!.contains("\"length\":123"))
+    XCTAssert(jsonString!.contains("\"embed-url\":\"https:\\/\\/www.youtube.com\\/watch?v=3345678\""))
+    XCTAssert(jsonString!.contains("\"video-url\":\"https:\\/\\/vide.os\\/source.m3u8\""))
+    XCTAssert(jsonString!.contains("\"cover-url\":\"https:\\/\\/imag.es\\/cover.jpg\""))
   }
 
 }

@@ -1,0 +1,10 @@
+storage_mode("google_cloud")
+
+google_cloud_bucket_name("icook-tvos-certificates")
+
+app_identifier ["com.thepolydice.icook"]
+platform 'tvos'
+
+username "bot@polydice.com"
+
+# For all available options run `match --help`

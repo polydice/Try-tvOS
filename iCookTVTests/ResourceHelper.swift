@@ -28,14 +28,14 @@ import Foundation
 
 class Resources {
 
-  private class func pathForResource(relativePath: String) -> String? {
-    let bundlePath: NSString = NSBundle(forClass: Resources.self).resourcePath!
-    return bundlePath.stringByAppendingPathComponent(relativePath)
+  private class func pathForResource(_ relativePath: String) -> String? {
+    let bundlePath = Bundle(for: Resources.self).resourcePath! as NSString
+    return bundlePath.appendingPathComponent(relativePath)
   }
 
-  class func testData(named filename: String) -> NSData? {
+  class func testData(named filename: String) -> Data? {
     if let path = pathForResource(filename) {
-      return NSData(contentsOfFile: path)
+      return (try? Data(contentsOf: URL(fileURLWithPath: path)))
     }
     return nil
   }

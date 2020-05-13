@@ -1,7 +1,7 @@
-source "http://rubygems.org"
-ruby "2.1.5"
+source "https://rubygems.org"
 
-gem "cocoapods", "~> 0.39.0"
+gem "cocoapods"
 gem "cocoapods-keys"
-gem "scan"
-gem "travis"
+gem "danger"
+gem "fastlane"
+gem "fastlane-plugin-codecov_reporter", github: 'dlackty/fastlane-plugin-codecov_reporter', branch: 'update-config-item'

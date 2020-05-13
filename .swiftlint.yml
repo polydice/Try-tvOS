@@ -1,0 +1,22 @@
+disabled_rules:
+  - force_try
+  - line_length
+  - nesting
+  - variable_name
+  - vertical_whitespace
+type_name:
+  excluded:
+    - iCookTVKeys
+    - iCookTVTests
+variable_name:
+  excluded:
+    - id
+    - URL
+included:
+  - iCookTV
+  - iCookTVTests
+excluded:
+  - Carthage
+  - Pods
+  - iCookTV/R.generated.swift
+  - vendor

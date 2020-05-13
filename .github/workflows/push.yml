@@ -1,0 +1,33 @@
+name: iOS build
+
+on: push
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Apply Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.x'
+      - uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: actions/cache@v1
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+      - name: Install and setup
+        run: |
+          bundle config path vendor/bundle
+          make bootstrap
+      - name: Run Fastlane Build
+        run: bundle exec fastlane scan
+      - name: Send coverage to Codecov
+        run: bundle exec fastlane run codecov_reporter

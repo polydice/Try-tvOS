@@ -25,64 +25,32 @@
 //
 
 import UIKit
-import Crashlytics
-import Fabric
-import TreasureData_tvOS_SDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
   let tabBarController = UITabBarController()
-  private var backgroundTask = UIBackgroundTaskInvalid
+  private var backgroundTask = UIBackgroundTaskIdentifier.invalid
 
   // MARK: - UIApplicationDelegate
 
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     GroundControl.sync()
-    setUpAnalytics()
+    Tracker.setUpAnalytics()
 
-    window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    window = UIWindow(frame: UIScreen.main.bounds)
     window?.rootViewController = TrackableNavigationController(rootViewController: LaunchViewController())
     window?.makeKeyAndVisible()
 
     return true
   }
 
-  func applicationDidEnterBackground(application: UIApplication) {
-    TreasureData.sharedInstance().endSession(Tracker.sessionsTable)
-
-    backgroundTask = application.beginBackgroundTaskWithExpirationHandler { [weak self] in
-      self?.endBackgroundTask(inApplication: application)
-    }
-
-    TreasureData.sharedInstance().uploadEventsWithCallback({ [weak self] in
-      self?.endBackgroundTask(inApplication: application)
-    }) { [weak self] _ in
-      self?.endBackgroundTask(inApplication: application)
-    }
-  }
-
   // MARK: - Private Methods
 
   private func endBackgroundTask(inApplication application: UIApplication) {
     application.endBackgroundTask(backgroundTask)
-    backgroundTask = UIBackgroundTaskInvalid
-  }
-
-  private func setUpAnalytics() {
-    Crashlytics.startWithAPIKey(iCookTVKeys.CrashlyticsAPIKey)
-    Fabric.with([Crashlytics.self])
-
-    TreasureData.initializeApiEndpoint("https://in.treasuredata.com")
-    TreasureData.initializeWithApiKey(iCookTVKeys.TreasureDataAPIKey)
-    TreasureData.sharedInstance().enableAutoAppendUniqId()
-    TreasureData.sharedInstance().enableAutoAppendModelInformation()
-    TreasureData.sharedInstance().enableAutoAppendAppInformation()
-    TreasureData.sharedInstance().enableAutoAppendLocaleInformation()
-
-    TreasureData.sharedInstance().defaultDatabase = Tracker.defaultDatabase
-    TreasureData.sharedInstance().startSession(Tracker.sessionsTable)
+    backgroundTask = UIBackgroundTaskIdentifier.invalid
   }
 
 }

@@ -6,24 +6,26 @@
   Copyright © 2016 Polydice, Inc. All rights reserved.
 */
 
-"iCook TV" = "愛料理 TV";
+"icook-tv" = "愛料理 TV";
 
-"History" = "瀏覽紀錄";
+"history" = "瀏覽紀錄";
 
-"Home" = "首頁";
+"home" = "首頁";
 
-"Upper tagline" = "愛料理食譜社群";
+"retry" = "再試一次";
 
-"Lower tagline" = "icook.tw";
+"ok" = "OK";
 
-"You haven't watched any video." = "先看些影片吧！";
+"launch-screen-upper-tagline" = "愛料理食譜社群";
 
-"No video found." = "目前沒有影片";
+"launch-screen-lower-tagline" = "icook.tw";
 
-"Error\n" = "發生錯誤\n";
+"no-history-found" = "先看些影片吧！";
 
-"Retry" = "再試一次";
+"no-video-found" = "目前沒有影片";
 
-"There's something wrong with this video." = "影片目前無法播放，請稍候再試";
+"error-title" = "發生錯誤\n";
 
-"Contact hi@icook.tw for support." = "如果問題持續發生，請來信 hi@icook.tw 告訴我們，謝謝";
+"video-error" = "影片目前無法播放，請稍候再試";
+
+"contact-info" = "如果問題持續發生，請來信 hi@icook.tw 告訴我們，謝謝";

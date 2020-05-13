@@ -6,8 +6,26 @@
   Copyright © 2016 Polydice, Inc. All rights reserved.
 */
 
-"Upper tagline" = "icook.tw";
+"icook-tv" = "iCook TV";
 
-"Lower tagline" = "";
+"history" = "History";
 
-"Contact hi@icook.tw for support." = "Please contact us at hi@icook.tw if this issue keeps happening.";
+"home" = "Home";
+
+"retry" = "Retry";
+
+"ok" = "OK";
+
+"launch-screen-upper-tagline" = "icook.tw";
+
+"launch-screen-lower-tagline" = "";
+
+"no-history-found" = "You haven't watched any video.";
+
+"no-video-found" = "No video found.";
+
+"error-title" = "Error\n";
+
+"video-error" = "There's something wrong with this video.";
+
+"contact-info" = "Please contact us at hi@icook.tw if this issue keeps happening.";

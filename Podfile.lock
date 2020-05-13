@@ -1,56 +1,142 @@
 PODS:
-  - Alamofire (3.4.0)
-  - Crashlytics (3.7.0):
-    - Fabric (~> 1.6.3)
-  - Fabric (1.6.7)
-  - Freddy (2.1.0)
+  - Alamofire (4.8.2)
+  - ComScore (6.3.1):
+    - ComScore/Dynamic (= 6.3.1)
+  - ComScore/Dynamic (6.3.1)
+  - FBSDKCoreKit (6.3.0):
+    - FBSDKCoreKit/Basics (= 6.3.0)
+    - FBSDKCoreKit/Core (= 6.3.0)
+  - FBSDKCoreKit/Basics (6.3.0)
+  - FBSDKCoreKit/Core (6.3.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (6.3.0):
+    - FBSDKLoginKit/Login (= 6.3.0)
+  - FBSDKLoginKit/Login (6.3.0):
+    - FBSDKCoreKit (~> 6.3.0)
+  - FBSDKShareKit (6.3.0):
+    - FBSDKShareKit/Share (= 6.3.0)
+  - FBSDKShareKit/Share (6.3.0):
+    - FBSDKCoreKit (~> 6.3.0)
+  - FBSDKTVOSKit (6.3.0):
+    - FBSDKCoreKit (~> 6.3.0)
+    - FBSDKLoginKit (~> 6.3.0)
+    - FBSDKShareKit (~> 6.3.0)
+  - Firebase/CoreOnly (6.21.0):
+    - FirebaseCore (= 6.6.5)
+  - Firebase/Crashlytics (6.21.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 4.0.0-beta.6)
+  - FirebaseAnalyticsInterop (1.5.0)
+  - FirebaseCore (6.6.5):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.2.2):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 2.0)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseCrashlytics (4.0.0-beta.6):
+    - FirebaseAnalyticsInterop (~> 1.2)
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstallations (~> 1.1)
+    - GoogleDataTransport (~> 5.1)
+    - GoogleDataTransportCCTSupport (>= 2.0.1, ~> 2.0)
+    - nanopb (~> 0.3.901)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstallations (1.1.1):
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/UserDefaults (~> 6.5)
+    - PromisesObjC (~> 1.2)
+  - GoogleDataTransport (5.1.0)
+  - GoogleDataTransportCCTSupport (2.0.1):
+    - GoogleDataTransport (~> 5.1)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/Environment (6.5.2)
+  - GoogleUtilities/Logger (6.5.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/UserDefaults (6.5.2):
+    - GoogleUtilities/Logger
   - HCYoutubeParser (0.0.5)
-  - Hue (1.1)
-  - KeenClientTD (3.2.25)
-  - Keys (1.0.0)
-  - Kingfisher (2.4.0)
-  - Nimble (4.0.1)
-  - Quick (0.9.2)
-  - TreasureData-tvOS-SDK (0.1.14):
-    - KeenClientTD (= 3.2.25)
+  - Hue (5.0.0)
+  - Keys (1.0.1)
+  - Kingfisher (5.7.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - PromisesObjC (1.2.8)
+  - SwiftLint (0.34.0)
 
 DEPENDENCIES:
-  - Alamofire
-  - Crashlytics
-  - Fabric
-  - Freddy
+  - Alamofire (= 4.8.2)
+  - ComScore
+  - FBSDKTVOSKit
+  - Firebase/Crashlytics
   - HCYoutubeParser
-  - Hue (from `https://github.com/hyperoslo/Hue.git`, commit `89ae5e1`)
+  - Hue (= 5.0.0)
   - Keys (from `Pods/CocoaPodsKeys`)
-  - Kingfisher
-  - Nimble
-  - Quick
-  - TreasureData-tvOS-SDK (= 0.1.14)
+  - Kingfisher (= 5.7.0)
+  - SwiftLint (= 0.34.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ComScore
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - FBSDKTVOSKit
+    - Firebase
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseCrashlytics
+    - FirebaseInstallations
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - HCYoutubeParser
+    - Hue
+    - Kingfisher
+    - nanopb
+    - PromisesObjC
+    - SwiftLint
 
 EXTERNAL SOURCES:
-  Hue:
-    :commit: 89ae5e1
-    :git: https://github.com/hyperoslo/Hue.git
   Keys:
     :path: Pods/CocoaPodsKeys
 
-CHECKOUT OPTIONS:
-  Hue:
-    :commit: 89ae5e1
-    :git: https://github.com/hyperoslo/Hue.git
-
 SPEC CHECKSUMS:
-  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
-  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
-  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  Freddy: bbdca013977db29638b24baf6572ce94452bec29
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ComScore: 2d6206a44c233c08b1f1891e8f138e8f80c07503
+  FBSDKCoreKit: 5d55c8f3007c9c49b793617b9102e46355fc7e17
+  FBSDKLoginKit: d46aa04d9bb9990a4deb6441736fae24a8c94496
+  FBSDKShareKit: cbd309f29d00e596bc28319724a7519940e804fa
+  FBSDKTVOSKit: f75cef4d46175dcc010278ef252edb8447bb1f3a
+  Firebase: f378c80340dd41c0ad0914af740c021eb282a04b
+  FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
+  FirebaseCore: 9f495d3afacb7b558711e6218ebb14b1c51b5802
+  FirebaseCoreDiagnostics: e9b4cd8ba60dee0f2d13347332e4b7898cca5b61
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseCrashlytics: b9e729da8b80d9c45f234f791a73b5fe647d4c31
+  FirebaseInstallations: acb3216eb9784d3b1d2d2d635ff74fa892cc0c44
+  GoogleDataTransport: b29a21d813e906014ca16c00897827e40e4a24ab
+  GoogleDataTransportCCTSupport: 6f15a89b0ca35d6fa523e1f752ef818588885988
+  GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
   HCYoutubeParser: bc1db8c062e4b835eda381f2be2f9970f6a8d071
-  Hue: c7d6a7206bac669ed69e78cc6c14a4d7bd28277c
-  KeenClientTD: ffe8b9a67e71643f59a9fda7ce51941ed5c49a42
-  Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
-  Kingfisher: 9171a424ee7f8031f518f649bb850d1eab541247
-  Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
-  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
-  TreasureData-tvOS-SDK: 18c6a68471e6df592ed5c50bf2c07507ee6e3b77
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 736b78321437044ebbf3785ed7603fee3da355ff
+
+COCOAPODS: 1.9.1

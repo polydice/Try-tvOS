@@ -1,0 +1,12 @@
+# For more information about this configuration visit
+# https://github.com/fastlane/scan#scanfile
+
+# In general, you can use the options available
+# scan --help
+
+workspace "iCookTV.xcworkspace"
+scheme "iCookTV"
+clean true
+skip_build true
+code_coverage true
+output_types "junit"

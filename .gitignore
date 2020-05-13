@@ -22,6 +22,7 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+*.generated.swift
 test_output
 
 ## Obj-C/Swift specific
@@ -36,5 +37,6 @@ Carthage/
 
 ## Production
 icook-tv-top-shelf-image.png
+iCookTV/GoogleService-Info.plist
 keys/
-fabric.*
+gc_keys.json

@@ -1,26 +1,33 @@
 # iCook tvOS App
 
-[![Build Status](https://travis-ci.org/polydice/iCook-tvOS.svg)](https://travis-ci.org/polydice/iCook-tvOS)
-![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg)
+![iOS build](https://github.com/polydice/iCook-tvOS/workflows/iOS%20build/badge.svg)
+![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)
+[![codecov.io](https://codecov.io/github/polydice/iCook-tvOS/coverage.svg?branch=develop)](https://codecov.io/github/polydice/iCook-tvOS?branch=develop)
 
 A tvOS app that plays [iCook TV](https://tv.icook.tw/) videos.
 
-## Setup
+<img src="https://polydice.github.io/iCook-tvOS/images/Screenshot.png" width=800px>
 
-Install required dependencies using [Homebrew](http://brew.sh/) and [Bundler](http://bundler.io/):
+## Quick Start
+
+Run the following commands to install dependencies:
 
 ```
-brew tap homebrew/bundle
-brew bundle
+make bootstrap
 ```
+
+## Production Setups
+
+If you work at Polydice, instead of `make bootstrap`, set up the project step by step with the following commands. Fill in the credentials and ask admin for required files.
+
 ```
 bundle install
 bundle exec pod install
 ```
 
-### API
+#### API
 
-`pod install` will prompt for the `BaseAPIURL` and other keys, which are required to run the app:
+`pod install` will prompt for the required configuration to run the app:
 
 ```
 CocoaPods-Keys has detected a keys mismatch for your setup.
@@ -30,29 +37,27 @@ What is the key for BaseAPIURL
 
 > TBD: API details are hidden for now due to proprietary reasons.
 
-### Required Keys
+#### Required Keys
 
-* CrashlyticsAPIKey
-* TreasureDataAPIKey
+Managed by [CocoaPods-Keys](https://github.com/orta/cocoapods-keys):
 
-Managed by CocoaPods-Keys, they can be real API keys or any arbitrary strings.
+* BaseAPIURL
+* FacebookAppID
 
-### Required Files
 
-```
-./keys/fabric.apikey
-./keys/fabric.buildsecret
-```
+#### Required Files
 
-Required by the Fabric script. The file contents can also be arbitrary texts.
+* Required by the Firebase SDK for the `Release` configuration:
 
-### Ignored
+  ```
+  iCookTV/GoogleService-Info.plist
+  ```
 
 * `icook-tv-top-shelf-image.png` is not included in the repo due to the license of image.
 
 ## Demo
 
-Install the beta version via <https://testflight.icook.tw>.
+* Download the tvOS app from [App Store](https://itunes.apple.com/tw/app/ai-liao-li/id554065086).
 
 ## Contact
 
