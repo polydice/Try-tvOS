@@ -16,7 +16,7 @@ target :iCookTV do
   pod "ComScore"
 
   target :iCookTVTests do
-    pod "SwiftLint", '0.34.0'
+    pod "SwiftLint"
   end
 end
 
