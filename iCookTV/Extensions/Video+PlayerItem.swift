@@ -26,26 +26,10 @@
 
 import AVKit
 import Foundation
-import HCYoutubeParser
 
 extension Video {
 
   // MARK: - Private Helpers
-
-  private var playerItemURL: URL? {
-    switch GroundControl.videoSource {
-    case .hls:
-      return source == nil ? nil : URL(string: source!)
-    case .youTube:
-      guard let
-        youtubeURL = URL(string: youtube),
-        let videoURL = HCYoutubeParser.h264videos(withYoutubeURL: youtubeURL)?["hd720"] as? String
-      else {
-        return nil
-      }
-      return URL(string: videoURL)
-    }
-  }
 
   private var titleMetaData: AVMetadataItem {
     let _title = AVMutableMetadataItem()
@@ -71,7 +55,7 @@ extension Video {
 
   func convertToPlayerItemWithCover(_ image: UIImage?, completion: @escaping (AVPlayerItem?) -> Void) {
     DispatchQueue.global().async {
-      guard let url = self.playerItemURL else {
+      guard let source = self.source, let url = URL(string: source) else {
         DispatchQueue.main.async {
           completion(nil)
         }
