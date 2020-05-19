@@ -53,8 +53,6 @@ Managed by [CocoaPods-Keys](https://github.com/orta/cocoapods-keys):
   iCookTV/GoogleService-Info.plist
   ```
 
-* `icook-tv-top-shelf-image.png` is not included in the repo due to the license of image.
-
 ## Demo
 
 * Download the tvOS app from [App Store](https://itunes.apple.com/tw/app/ai-liao-li/id554065086).
