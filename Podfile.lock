@@ -62,7 +62,9 @@ PODS:
     - GoogleUtilities/Logger
   - Hue (5.0.0)
   - Keys (1.0.1)
-  - Kingfisher (5.7.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -78,7 +80,7 @@ DEPENDENCIES:
   - Firebase/Crashlytics
   - Hue (= 5.0.0)
   - Keys (from `Pods/CocoaPodsKeys`)
-  - Kingfisher (= 5.7.0)
+  - Kingfisher
   - SwiftLint
 
 SPEC REPOS:
@@ -128,11 +130,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
   Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
-  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: 5d2e3c62f816e2637240007ba2cf6db958a43f46
+PODFILE CHECKSUM: ccd34ec2f02d9e98562b6280d03df6e1c2a43352
 
 COCOAPODS: 1.9.1
