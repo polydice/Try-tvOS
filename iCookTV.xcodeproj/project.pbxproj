@@ -885,10 +885,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 103;
+				CURRENT_PROJECT_VERSION = develop;
 				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = iCookTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook;
 				PRODUCT_NAME = iCookTV;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook tvos";
@@ -904,10 +905,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 103;
+				CURRENT_PROJECT_VERSION = develop;
 				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = iCookTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook;
 				PRODUCT_NAME = iCookTV;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook tvos";
