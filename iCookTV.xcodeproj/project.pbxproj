@@ -65,7 +65,6 @@
 		B5EE17501DC509B8009DA1AE /* DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EE174F1DC509B8009DA1AE /* DataFetching.swift */; };
 		B5EFE6C21DC600FF00236D1A /* VideosGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFE6C11DC600FF00236D1A /* VideosGridLayout.swift */; };
 		B5F7BF4C1BA9C95F00A75099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7BF4B1BA9C95F00A75099 /* AppDelegate.swift */; };
-		B5F7BF531BA9C95F00A75099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F7BF521BA9C95F00A75099 /* Assets.xcassets */; };
 		E0CC9B4F972579066B42862A /* Pods_iCookTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1068EAEDE861A2EEA0CF2228 /* Pods_iCookTV.framework */; };
 		E327714A24759E15002F06FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7BF4B1BA9C95F00A75099 /* AppDelegate.swift */; };
 		E327714B24759E15002F06FE /* BlurBackgroundPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C79B151DBFBCF80069837A /* BlurBackgroundPresentable.swift */; };
@@ -115,11 +114,13 @@
 		E327717724759E15002F06FE /* VideosGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFE6C11DC600FF00236D1A /* VideosGridLayout.swift */; };
 		E327717824759E15002F06FE /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCF9331C985E1600D19FC0 /* VideosViewController.swift */; };
 		E327717A24759E15002F06FE /* Pods_iCookTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1068EAEDE861A2EEA0CF2228 /* Pods_iCookTV.framework */; };
-		E327717C24759E15002F06FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F7BF521BA9C95F00A75099 /* Assets.xcassets */; };
 		E327717D24759E15002F06FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C764092454A82F009A151C /* GoogleService-Info.plist */; };
 		E327717E24759E15002F06FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5A614F91CCA05B4004A3CD5 /* InfoPlist.strings */; };
-		E327717F24759E15002F06FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F86E61A246A5C3C0019A283 /* LaunchScreen.storyboard */; };
 		E327718024759E15002F06FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B500D9A81CB94B5D00622198 /* Localizable.strings */; };
+		E38DFC012475B71100D78E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F86E61A246A5C3C0019A283 /* LaunchScreen.storyboard */; };
+		E38DFC032475B7C800D78E92 /* DemoLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38DFC022475B7C700D78E92 /* DemoLaunchScreen.storyboard */; };
+		E38DFC052475BA9200D78E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F7BF521BA9C95F00A75099 /* Assets.xcassets */; };
+		E38DFC062475BA9700D78E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F7BF521BA9C95F00A75099 /* Assets.xcassets */; };
 		E3C7640A2454A82F009A151C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C764092454A82F009A151C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +209,7 @@
 		CCC5F61AC4253D5EB2FF6C5F /* Pods_iCookTV_iCookTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCookTV_iCookTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E327718724759E15002F06FE /* iCookTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCookTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E327718824759E16002F06FE /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demo-Info.plist"; path = "/Users/dlackty/src/iCook-tvOS/Demo-Info.plist"; sourceTree = "<absolute>"; };
+		E38DFC022475B7C700D78E92 /* DemoLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoLaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3C764092454A82F009A151C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F631C183B75D6A45DF934799 /* Pods-iCookTV-iCookTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCookTV-iCookTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iCookTV-iCookTVTests/Pods-iCookTV-iCookTVTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -405,6 +407,7 @@
 				B5A614FC1CCA0848004A3CD5 /* Supporting Files */,
 				B5F7BF521BA9C95F00A75099 /* Assets.xcassets */,
 				4F86E61A246A5C3C0019A283 /* LaunchScreen.storyboard */,
+				E38DFC022475B7C700D78E92 /* DemoLaunchScreen.storyboard */,
 			);
 			path = iCookTV;
 			sourceTree = "<group>";
@@ -553,11 +556,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F7BF531BA9C95F00A75099 /* Assets.xcassets in Resources */,
 				E3C7640A2454A82F009A151C /* GoogleService-Info.plist in Resources */,
 				B5A614F71CCA05B4004A3CD5 /* InfoPlist.strings in Resources */,
 				4F86E61B246A5C3C0019A283 /* LaunchScreen.storyboard in Resources */,
 				B500D9A61CB94B5D00622198 /* Localizable.strings in Resources */,
+				E38DFC062475BA9700D78E92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,10 +577,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E327717C24759E15002F06FE /* Assets.xcassets in Resources */,
 				E327717D24759E15002F06FE /* GoogleService-Info.plist in Resources */,
 				E327717E24759E15002F06FE /* InfoPlist.strings in Resources */,
-				E327717F24759E15002F06FE /* LaunchScreen.storyboard in Resources */,
+				E38DFC012475B71100D78E92 /* LaunchScreen.storyboard in Resources */,
+				E38DFC032475B7C800D78E92 /* DemoLaunchScreen.storyboard in Resources */,
+				E38DFC052475BA9200D78E92 /* Assets.xcassets in Resources */,
 				E327718024759E15002F06FE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1217,7 +1221,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = DemoLaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 101;
@@ -1238,7 +1242,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = DemoLaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 101;

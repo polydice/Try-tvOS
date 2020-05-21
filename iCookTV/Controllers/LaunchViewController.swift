@@ -31,7 +31,11 @@ class LaunchViewController: UIViewController, DataFetching {
 
   private lazy var launchImageView: UIImageView = {
     let _imageView = UIImageView()
-    _imageView.image = UIImage(named: "launchImage")
+    #if DEMO
+    _imageView.image = UIImage(named: "DemoLaunchScreenImage")
+    #else
+    _imageView.image = UIImage(named: "LaunchScreenImage")
+    #endif
     _imageView.contentMode = .scaleAspectFill
     return _imageView
   }()
