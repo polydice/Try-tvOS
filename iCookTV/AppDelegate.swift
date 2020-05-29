@@ -50,6 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     #if DEMO
     // Do not store any histroy for demo version
     HistoryManager.deleteCache()
+    exit(1)
     #endif
   }
 

@@ -126,6 +126,10 @@ class LaunchViewController: UIViewController, DataFetching {
         self.view.layoutIfNeeded()
       }
     }, completion: { _ in
+      #if DEMO
+      Thread.sleep(forTimeInterval: 2)
+      #endif
+
       self.semaphore.signal()
       self.isAnimating = false
     })

@@ -211,6 +211,8 @@
 		E327718824759E16002F06FE /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demo-Info.plist"; path = "/Users/dlackty/src/iCook-tvOS/Demo-Info.plist"; sourceTree = "<absolute>"; };
 		E38DFC022475B7C700D78E92 /* DemoLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoLaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3C764092454A82F009A151C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3D0FB672481174500191A31 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E3D0FB682481174500191A31 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F631C183B75D6A45DF934799 /* Pods-iCookTV-iCookTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCookTV-iCookTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iCookTV-iCookTVTests/Pods-iCookTV-iCookTVTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -538,6 +540,7 @@
 				en,
 				Base,
 				"zh-Hant",
+				"zh-Hans",
 			);
 			mainGroup = B5F7BF3F1BA9C95F00A75099;
 			productRefGroup = B5F7BF491BA9C95F00A75099 /* Products */;
@@ -1013,6 +1016,7 @@
 				B500D9A91CB94B6600622198 /* Base */,
 				B500D9A71CB94B5D00622198 /* en */,
 				B500D9AA1CB94BA400622198 /* zh-Hant */,
+				E3D0FB682481174500191A31 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1023,6 +1027,7 @@
 				B5A614F81CCA05B4004A3CD5 /* Base */,
 				B5A614FA1CCA05B6004A3CD5 /* en */,
 				B5A614FB1CCA05B7004A3CD5 /* zh-Hant */,
+				E3D0FB672481174500191A31 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1151,7 +1156,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 101;
+				CURRENT_PROJECT_VERSION = 102;
 				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = iCookTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1171,7 +1176,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 101;
+				CURRENT_PROJECT_VERSION = 102;
 				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = iCookTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1224,7 +1229,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = DemoLaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 101;
+				CURRENT_PROJECT_VERSION = 102;
 				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = "Demo-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1232,7 +1237,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEMO";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook.retaildemo;
 				PRODUCT_NAME = iCookTV;
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook tvos";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook.retaildemo tvos";
 			};
 			name = Debug;
 		};
@@ -1245,7 +1250,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = DemoLaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 101;
+				CURRENT_PROJECT_VERSION = 102;
 				DEVELOPMENT_TEAM = U27B56TU48;
 				INFOPLIST_FILE = "Demo-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1253,7 +1258,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEMO";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thepolydice.icook.retaildemo;
 				PRODUCT_NAME = iCookTV;
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook tvos";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.thepolydice.icook.retaildemo tvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
