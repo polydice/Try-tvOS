@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "LaunchScreen3.png",
+      "filename" : "LaunchScreen3_Demo.png",
       "idiom" : "tv",
       "scale" : "1x"
     },
     {
-      "filename" : "LaunchScreen3@2x.png",
+      "filename" : "LaunchScreen3_Demo@2x.png",
       "idiom" : "tv",
       "scale" : "2x"
     }
