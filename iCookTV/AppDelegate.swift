@@ -46,6 +46,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
 
+  func applicationWillResignActive(_ application: UIApplication) {
+    #if DEMO
+    // Do not store any histroy for demo version
+    HistoryManager.deleteCache()
+    exit(1)
+    #endif
+  }
+
   // MARK: - Private Methods
 
   private func endBackgroundTask(inApplication application: UIApplication) {

@@ -24,6 +24,7 @@ xcuserdata
 *.xcscmblueprint
 *.generated.swift
 test_output
+.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap

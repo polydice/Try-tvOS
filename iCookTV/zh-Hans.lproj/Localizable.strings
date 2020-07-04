@@ -1,0 +1,31 @@
+/*
+  Localizable.strings
+  iCookTV
+
+  Created by Ben on 09/04/2016.
+  Copyright © 2016 Polydice, Inc. All rights reserved.
+*/
+
+"icook-tv" = "爱料理 TV";
+
+"history" = "浏览纪录";
+
+"home" = "首页";
+
+"retry" = "再试一次";
+
+"ok" = "OK";
+
+"launch-screen-upper-tagline" = "爱料理食谱社群";
+
+"launch-screen-lower-tagline" = "icook.tw";
+
+"no-history-found" = "先看些视频吧！";
+
+"no-video-found" = "目前没有视频";
+
+"error-title" = "发生错误\n";
+
+"video-error" = "视频目前无法播放，请稍候再试";
+
+"contact-info" = "如果问题持续发生，请来信 hi@icook.tw 告诉我们，谢谢";

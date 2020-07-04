@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "LaunchScreen3_Demo.png",
+      "idiom" : "tv",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "LaunchScreen3_Demo@2x.png",
+      "idiom" : "tv",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}
