@@ -101,6 +101,7 @@ class CategoriesViewController: UIViewController,
 
   override var preferredFocusedView: UIView? {
     return collectionView
+    print(collectionView)
   }
 
   // MARK: - UICollectionViewDelegate
